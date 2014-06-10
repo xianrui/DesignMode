@@ -1,0 +1,97 @@
+<head>
+<style>
+body {
+	margin: 0px;
+}
+</style>
+
+<script type="text/javascript"
+	src="http://code.jquery.com/jquery-1.6.min.js"></script>
+
+
+<script type="text/javascript">
+var jaes = new Array();
+	$(function() {
+		
+		jaes[0]="danyue";
+		jaes[1]="appyun";
+		jaes[2]="appyun7";
+		jaes[3]="qppyun6";
+		jaes[4]="appyun5";
+		jaes[5]="appyun4";
+		jaes[6]="appyun2";
+		jaes[7]="appyun3";
+		jaes[8]="baotao";
+		jaes[9]="zhuoyue";
+		jaes[10]="cnblogs";
+		jaes[11]="anroid";
+		jaes[12]="fentuan";
+		jaes[13]="ertong";
+		jaes[14]="appjava";
+		jaes[15]="fenweibo";
+		$.each(jaes,function(i,n){  
+			$.get("http://"+n+".jd-app.com/AlbumInfo", function(result){
+				$("#servletResult p:eq(" + i + ")").html(n+ ":" + result);
+			});    
+        });      
+	});
+</script>
+</head>
+<body>
+	<div id="servletResult">
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+
+	</div>
+</body>
+</html>
